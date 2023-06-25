@@ -19,4 +19,9 @@ spec:
           image: vickeyshetty/flask-app:6
           ports:
             - containerPort: 4000
+          env:
+            - name: POSTGRES_USER
+              value: test_user
+            - name: DB_URL
+              value: postgresql://postgres:postgres@flask_db:5432/postgres
           imagePullPolicy: Always
