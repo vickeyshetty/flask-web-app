@@ -17,7 +17,14 @@ spec:
         - name: postgres
           image: postgres
           ports:
-            - containerPort: 27017
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              value: test_user
+            - name: POSTGRES_PASSWORD
+              value: test_password
+            - name: POSTGRES_DB
+              value: test_db
           volumeMounts:
             - name: storage
               mountPath: /data/db
