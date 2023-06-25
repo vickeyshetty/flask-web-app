@@ -19,4 +19,4 @@ spec:
           image: vickeyshetty/flask-app:3
           ports:
             - containerPort: 4000
-          imagePullPolicy: Always
+     #     imagePullPolicy: Always
