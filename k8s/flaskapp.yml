@@ -22,6 +22,8 @@ spec:
           env:
             - name: POSTGRES_USER
               value: test_user
+            - name: POSTGRES_HOST
+              value: postgres
             - name: DB_URL
               value: postgresql://postgres:postgres@flask_db:5432/postgres
           imagePullPolicy: Always
