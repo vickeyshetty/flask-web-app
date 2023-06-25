@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flaskapp
-          image: vickeyshetty/flask-app:replaceImageTag
+          image: vickeyshetty/flask-app:6
           ports:
             - containerPort: 4000
           imagePullPolicy: Never
