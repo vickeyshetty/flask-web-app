@@ -21,5 +21,5 @@ spec:
             - containerPort: 4000
           env:
             - name: DB_URL
-              value: postgresql://test_user:test_password@test_db:5432/postgres
+              value: postgresql://test_user:test_password@postgres:5432/test_db
           imagePullPolicy: Always
