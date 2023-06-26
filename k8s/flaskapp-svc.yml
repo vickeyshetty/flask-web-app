@@ -6,7 +6,7 @@ spec:
   selector:
     app: flaskapp
   ports:
-    - port: 4000
-      targetPort: 80
+    - port: 80
+      targetPort: 4000
       nodePort: 30007
   type: NodePort
